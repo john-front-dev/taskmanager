@@ -128,6 +128,14 @@ export default function TasksPage() {
     );
   };
 
+  const handleDeleteTask = () => {
+    if (selectedTaskId) {
+      setTasks((prevTasks) =>
+        prevTasks.filter((task) => task.id !== selectedTaskId)
+      );
+      setSelectedTaskId(null);
+    }
+  };
   return (
     <DndProvider backend={HTML5Backend}>
       <div className="space-y-6">
@@ -142,9 +150,11 @@ export default function TasksPage() {
         <div className="flex space-x-4 max-w-[calc(100vw-300px)] no-scrollbar overflow-x-auto pb-4">
           {isLoading ? (
             <>
-              <Skeleton className="h-[80vh] w-full" />
-              <Skeleton className="h-[80vh] w-full" />
-              <Skeleton className="h-[80vh] w-full" />
+              <Skeleton className="h-[80vh] min-w-[300px] w-full" />
+              <Skeleton className="h-[80vh] min-w-[300px] w-full" />
+              <Skeleton className="h-[80vh] min-w-[300px] w-full" />
+              <Skeleton className="h-[80vh] min-w-[300px] w-full" />
+              <Skeleton className="h-[80vh] min-w-[300px] w-full" />
             </>
           ) : (
             <>
@@ -183,6 +193,7 @@ export default function TasksPage() {
           isOpen={isTaskDrawerOpen}
           onClose={() => setIsTaskDrawerOpen(false)}
           onTaskUpdate={handleTaskUpdate}
+          onTaskDelete={handleDeleteTask}
         />
       </div>
     </DndProvider>

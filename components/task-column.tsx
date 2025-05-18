@@ -41,7 +41,7 @@ export default function TaskColumn({
   return (
     <div
       ref={(node) => drop(node)}
-      className={`flex flex-col w-80 min-h-[calc(100vh-150px)] min-w-[250px] rounded-lg border bg-card ${
+      className={`flex flex-col w-80 min-h-[calc(100vh-150px)] min-w-[300px] rounded-lg border bg-card ${
         isOver ? "bg-muted/50" : ""
       }`}
     >
