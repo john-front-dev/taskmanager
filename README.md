@@ -23,7 +23,7 @@ TaskManager решает проблему эффективного управл�
 
 ## 🌐 Демо
 
-[Открыть демо]([https://task-manager-beta-inky.vercel.app/](https://task-manager-dev-tau.vercel.app/)
+[Открыть демо](https://task-manager-beta-inky.vercel.app/](https://task-manager-dev-tau.vercel.app/](https://taskmanager-dev-tau.vercel.app/)
 
 ## 🛠️ Технологии
 
