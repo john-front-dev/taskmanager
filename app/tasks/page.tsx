@@ -147,7 +147,7 @@ export default function TasksPage() {
           </Button>
         </div>
 
-        <div className="flex space-x-4 max-w-[calc(100vw-300px)] no-scrollbar overflow-x-auto pb-4">
+        <div className="flex space-x-4 max-w-[calc(100vw-320px)] no-scrollbar overflow-x-auto pb-4">
           {isLoading ? (
             <>
               <Skeleton className="h-[80vh] min-w-[300px] w-full" />
